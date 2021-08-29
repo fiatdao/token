@@ -1,0 +1,35 @@
+{
+  "name": "entr-token",
+  "version": "1.0.0",
+  "description": "The Official ENTR Token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnterDAO/ENTR-Token.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnterDAO/ENTR-Token/issues"
+  },
+  "homepage": "https://github.com/EnterDAO/ENTR-Token#readme",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.8",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "bignumber.js": "^9.0.1",
+    "chai": "^4.3.4",
+    "chai-bignumber": "^3.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.6",
+    "hardhat": "^2.6.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1"
+  }
+}
