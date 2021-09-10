@@ -1,15 +1,28 @@
-const hre = require("hardhat");
+const hre = require('hardhat')
+const ethers = hre.ethers;
 
-async function main() {
-    const entrToken = await hre.ethers.getContractFactory('ENTR')
-    const token = await entrToken.deploy()
-    await token.deployed()
-    console.log('ENTR Token deployed to:', token.address)
+async function deployENTR() {
+    await hre.run('compile'); // We are compiling the contracts using subtask
+    const [deployer] = await ethers.getSigners(); // We are getting the deployer
+
+    console.log('Deploying contracts with the account:', deployer.address); // We are printing the address of the deployer
+    console.log('Account balance:', (await deployer.getBalance()).toString()); // We are printing the account balance
+
+    const ENTRToken = await ethers.getContractFactory("ENTR"); // 
+    const enterToken = await ENTRToken.deploy();
+    console.log(`Waiting for ENTRToken deployment...`);
+    await enterToken.deployTransaction.wait(5);
+
+    console.log(`ENTRToken Contract deployed. Address: `, enterToken.address);
+
+    console.log(`Verifying ...`);
+    await hre.run("verify:verify", {
+        address: enterToken.address,
+        constructorArguments: [],
+        contract: "contracts/ENTR.sol:ENTR",
+    });
+
+    console.log('Done!');
 }
 
-main()
-    .then(() => process.exit(0))
-    .catch(error => {
-        console.error(error)
-        process.exit(1)
-    })
+module.exports = deployENTR;

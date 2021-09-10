@@ -1,6 +1,14 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
 
+const { task } = require('hardhat/config');
+
+task("deploy-token", "Deploys ENTR Token Vault")
+  .setAction(async ({ }, hre, runSuper) => {
+    const deploy = require("./scripts/deploy-token");
+    await deploy();
+  });
+
 const config = require('./config');
 
 // You need to export an object to set up your config
@@ -19,7 +27,6 @@ module.exports = {
       }
     }
   },
-  defaultNetwork: 'buidlerevm',
   networks: config.networks,
   etherscan: config.etherscan
 };
