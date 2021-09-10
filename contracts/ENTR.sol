@@ -1,10 +1,10 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "./ERC20WithPermit.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract ENTR is ERC20Burnable, Ownable {
+contract ENTR is ERC20WithPermit, Ownable {
 
     uint256 private constant SUPPLY = 100_000_000 * 10**18;
 
