@@ -1,8 +1,8 @@
 # ENTR Token
 
-Mainnet: TBD
+Mainnet: 0xd779eea9936b4e323cddff2529eb6f13d0a4d66e
 
-Rinkeby: 0x822a5c31679f4A580dEb6aE4596437AcDB9DDcAb
+Rinkeby: 0x714d2A80C08e10C1367b1BeE7ca1f4976df67cD5
 
 
 ## Deployment Steps
