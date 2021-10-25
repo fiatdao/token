@@ -1,22 +1,22 @@
 {
-  "name": "entr-token",
+  "name": "fiat-token",
   "version": "1.0.0",
-  "description": "The Official ENTR Token",
+  "description": "The Official FIAT Token",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EnterDAO/ENTR-Token.git"
+    "url": "git+https://github.com/FiatDAO/FIAT-Token.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EnterDAO/ENTR-Token/issues"
+    "url": "https://github.com/FiatDAO/FIAT-Token/issues"
   },
-  "homepage": "https://github.com/EnterDAO/ENTR-Token#readme",
+  "homepage": "https://github.com/FiatDAO/FIAT-Token#readme",
   "devDependencies": {
     "@nomiclabs/buidler": "^1.4.8",
     "@nomiclabs/hardhat-ethers": "^2.0.2",

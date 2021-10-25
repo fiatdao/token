@@ -1,4 +1,4 @@
-# ENTR Token
+# FIAT Token
 
 Mainnet: 0xd779eea9936b4e323cddff2529eb6f13d0a4d66e
 

@@ -4,15 +4,15 @@ const { BigNumber } = require('bignumber.js')
 
 use(require('chai-bignumber')())
 
-describe('ENTR', function () {
+describe('FIAT', function () {
     let token
 
-    const tokenName = 'ENTER Governance Token'
-    const tokenSymbol = 'ENTR'
+    const tokenName = 'FIAT Governance Token'
+    const tokenSymbol = 'FIAT'
     const mintTokens = new BigNumber(100_000_000 * Math.pow(10, 18));
 
     beforeEach(async function () {
-        const Token = await ethers.getContractFactory('ENTR')
+        const Token = await ethers.getContractFactory('FIAT')
         token = await Token.deploy()
         await token.deployed()
     })
