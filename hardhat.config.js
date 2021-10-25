@@ -3,7 +3,7 @@ require("@nomiclabs/hardhat-etherscan");
 
 const { task } = require('hardhat/config');
 
-task("deploy-token", "Deploys FIAT Token Vault")
+task("deploy-token", "Deploys FDT Token Vault")
   .setAction(async ({ }, hre, runSuper) => {
     const deploy = require("./scripts/deploy-token");
     await deploy();

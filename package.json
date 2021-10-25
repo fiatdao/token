@@ -1,7 +1,7 @@
 {
-  "name": "fiat-token",
+  "name": "fiat-dao-token",
   "version": "1.0.0",
-  "description": "The Official FIAT Token",
+  "description": "The Official FIAT DAO Token",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
