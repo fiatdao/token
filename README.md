@@ -1,8 +1,8 @@
-# FIAT Token
+# FIAT DAO Token
 
-Mainnet: 0xd779eea9936b4e323cddff2529eb6f13d0a4d66e
+Mainnet: 0xed1480d12be41d92f36f5f7bdd88212e381a3677
 
-Rinkeby: 0x714d2A80C08e10C1367b1BeE7ca1f4976df67cD5
+Rinkeby: 0xb9e8d9890b41eb4b21b52353a5d4671f48b9840f
 
 
 ## Deployment Steps
