@@ -11,7 +11,7 @@ Rinkeby: 0xb9e8d9890b41eb4b21b52353a5d4671f48b9840f
 npx hardhat run --network {NETWORK} ./scripts/deploy-token.js
 ```
 
-## Verify in Etherscan
+## Verify on Etherscan
 
 ```
 npx hardhat verify --network {NETWORK} {TOKEN_ADDRESS}
