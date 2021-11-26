@@ -15,7 +15,7 @@ module.exports = {
         mainnet: {
             url: 'https://mainnet.infura.io/v3/YOUR-INFURA-API-KEY',
             chainID: 1,
-            accounts: ["PK"]
+            accounts: ["0x0000000000000000000000000000000000000000000000000000000000000000"]
         },
     },
     // Use to verify contracts on Etherscan
